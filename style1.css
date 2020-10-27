@@ -1,0 +1,382 @@
+/* Police d'écriture */
+
+@font-face{
+    font-family: "MaSuperPolice";
+    src:url(./KaushanScript-Regular.otf) format('truetype');
+}
+
+/* Règles de responsive */
+
+@media (min-width: 480px) and (max-width: 780px)
+{
+
+}
+
+@media (min-width: 781px) and (max-width: 979px)
+{
+
+}
+
+/* Body */
+
+body{
+    -moz-box-sizing: border-box; 
+    box-sizing: border-box;
+    margin-bottom: 5em;
+}
+
+/* Bandeau / Titre */
+
+.bandeau{
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-image: url(./Images/img3.jpg);
+    height: 1900px; /* Taille de l'image */
+    background-attachment: fixed;
+    border: solid ;
+    opacity: 50%;
+ 
+}
+.titre
+{
+    position: absolute;
+    top: 30%;
+    font-size: 800%;
+    color:#6b6b6b;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'MaSuperPolice';
+    text-shadow: 10px 0px 0 #000000;
+    text-align: center;
+}
+
+/* Menu déroulant */
+
+.changeColor{
+    color: #B63E3E;
+}
+
+nav{
+    width: 30%;
+    margin: auto;
+    position: relative;
+    text-align: left;
+}
+
+.liste{
+    position: fixed;
+    top: 0;
+    left: 0;
+    text-align: left;
+}
+
+nav ul{
+    list-style-type: circle; /* Définir l'apparence de la puce d'un élément de liste */
+}
+
+nav ul li{
+    float: left; /* Indique qu'un élément doit être retiré du flux normal et doit être placé sur le côté droit ou sur le côté gauche de son conteneur. */
+    width: 50%;
+    text-align: left;
+    position: relative;
+}
+
+.deroulant > a::after{
+    content:" ▼";
+    font-size: 100%;
+    text-align: left;
+    color: rgb(214, 62, 62);
+}
+
+nav > ul li:hover .sous{ /* Afficher liste déroulante */
+    display: block;
+}
+
+.sous{ /* Mise en forme de la liste déroulante */
+    display: none;
+    background-color: rgba(180, 176, 228, 0.76);;
+    position: absolute;
+    width: 100%; /* permet de définir la largeur de la boîte du contenu d'un élément. */
+}
+
+.sous li{ /* Affichage menu déroulant l'un en dessous de l'autre */
+    float: none;
+    width: 100%;
+    text-align: left;
+}
+
+nav a{ /* Mise en forme intérieure du menu déroulant */
+    display: block;
+    text-decoration: none;
+    color: black;
+    padding: 3% 0;
+}
+
+nav a:hover{ /* Couleur d'ecriture et sous-lignement en passage souris du menu déroulant */
+    color: rgba(255, 0, 0, 0.575);
+    border-bottom: 2px solid rgb(255, 0, 0);
+}
+
+/* BLOC Jours de la semaine */
+
+a { /* Ecriture 'Menu' */
+    text-decoration: rgb(0, 0, 0);
+    font-family: 'MaSuperPolice';
+    font-size: 150%;
+}
+
+a:active {
+    background: #265301;
+    color: #CDFEAA;
+  }
+
+.jour{ /* Ecriture Jours de la semaine */
+    text-decoration: none;
+    color: rgb(0, 0, 0); 
+    font-family: 'MaSuperPolice';
+    font-size: 200%;
+}
+
+.jour:hover{
+    background: rgba(180, 176, 228, 0.76);
+    border-bottom: 2px rgba(180, 176, 228, 0.76);
+}
+
+.J1, .J2, .J3, .J4, .J4, .J5{
+    padding: 1%; /* définir les différents écarts de remplissage sur les quatre côtés d'un élément */
+    background: rgba(255, 255, 255, 0.76);
+    font-weight: bold;
+    width: 10%;
+    height: 100%;
+    text-align: center;
+    margin: 3px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.jours{
+    text-align: center;
+    position: relative;
+}
+
+.Texte{
+    color:rgb(0, 0, 0);
+    font-family: 'MaSuperPolice';
+    margin-top: 5%;
+}
+
+.Reserver{
+    color: rgb(0, 0, 0);
+    font-size: 4em;
+    text-align: center;  
+    margin-top: 5%;
+    margin-bottom: 10%;
+}
+
+.Reserver:hover{
+    border: 1px 1px 2px 1px solid;     
+    background: #fc9292
+}
+
+p{
+    font-size: 2em;
+}
+
+.img2{
+    float: right;
+    margin-top: 2%;
+}
+
+/* Formulaire de contact */
+
+.formulaire {
+    padding: 0;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background: rgba(180, 176, 228, 0.76);
+}
+
+.form-control {
+    display: block;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.form-control1 {
+    display: block;
+    margin-top: 1%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    width: 50%;
+    color: #000000;
+}
+
+.form-control2 {
+    display: block;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 10;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.form-control3 {
+    display: block;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 10%;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 10;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+input:focus, textarea:focus{
+    border-color: rgba(255, 255, 0, 0.719);
+    border-width: 0.5rem;
+    box-shadow:10px 10px 10px rgba(255, 255, 0, 0.719);
+    background-color: rgb(150, 208, 235);
+}
+
+
+.section-title{
+    font-size: 400%;
+    text-align: center;
+    font-family : 'MaSuperPolice';
+}
+
+.btn-more {
+    background-color: #197e1c;
+    margin-top: 30px;
+    border-radius: 20px;
+    color: rgb(2, 2, 2);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border: none;
+}
+
+.btn-more1 {
+    background-color: #a33724;
+    margin-top: 30px;
+    border-radius: 20px;
+    color: rgb(0, 0, 0);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border: none;
+}
+
+input:invalid{
+    border-color: rgb(155, 56, 56);
+    border-width: 0.2rem;
+}
+
+input:valid{
+    border-color: rgb(46, 126, 53);
+    border-width: 0.2rem;
+}
+
+button, input, select, textarea {
+    font-family : 'MaSuperPolice';
+    font-size   : 150%;
+}
+
+/* FOOTER
+Footer left et center et Principal*/
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+	display: inline-block;
+	vertical-align: top;
+}
+
+
+.footer-distributed{
+	background: #495057;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	font: bold 16px sans-serif;
+	padding: 2% 2%;
+}
+
+.footer-distributed .footer-left{
+	width: 40%;
+}
+
+/* Footer Center */
+
+.footer-distributed .footer-center{
+	width: 35%;
+}
+
+
+.footer-distributed .footer-center p{
+	display: inline-block;
+	color: #030101;
+    font-weight: 400;
+	vertical-align: middle;
+    margin:0;text-align: left;
+    font-size: 150%;
+}
+
+.footer-distributed .footer-center p a{
+	color:  rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+/* Footer Right */
+
+.footer-distributed .footer-right{
+	width: 20%;
+}
+.img3{
+    float: left;
+    margin-top: 2%;
+    width: 3%;
+}
+
+.img4{
+    float: left;
+    margin-top: 3%;
+    width: 2%;
+}
+
+.img5{
+    float: left;
+    margin-top: 2%;
+    width: 3%;
+}
