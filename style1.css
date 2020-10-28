@@ -47,7 +47,6 @@ body{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-family: 'MaSuperPolice';
     text-shadow: 10px 0px 0 #000000;
-    text-align: center;
 }
 
 /* Menu déroulant */
@@ -210,7 +209,6 @@ p{
     background-clip: padding-box;
     border: 1px solid #ced4da;
     border-radius: .25rem;
-    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
 
 .form-control1 {
@@ -219,7 +217,7 @@ p{
     margin-left: auto;
     margin-right: auto;
     text-align: left;
-    width: 50%;
+    width: 08%;
     color: #000000;
 }
 
@@ -249,6 +247,22 @@ p{
     padding: .375rem .75rem;
     font-size: 1rem;
     line-height: 10;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.form-control4 {
+    display: block;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 10%;
+    padding: .375rem .75rem;
+    font-size: 1rem;
     color: #495057;
     background-color: #fff;
     background-clip: padding-box;
@@ -380,3 +394,4 @@ Footer left et center et Principal*/
     margin-top: 2%;
     width: 3%;
 }
+

@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
     <link rel="stylesheet" href="style1.css" />
     <script src="main.js"></script>
-    <script type="text/javascript" src="monscript.js"></script>
+    <script type="text/javascript" src="java.js"></script>
     <title>La fabrique du petit mangé</title>
 </head>
 
@@ -32,26 +32,29 @@
     </div>
     </section>
     <section class="formulaire">
-        <form action="">
+        <form action="insert.php" method="POST">
             <h1 class="section-title">NOUS CONTACTER</h1>
 
             <label for="date" class="form-control1">Date de réservation :</label>
-            <input type="date" class="form-control" id="name" name="nom" required />
+            <input type="date" class="form-control4" id="name" name="date" required />
 
-            <label for="date" class="form-control1">Heure de réservation :</label>
-            <input type="time" class="form-control" id="name" name="prenom" required />
+            <label for="time" class="form-control1">Heure de réservation :</label>
+            <input type="time" class="form-control4" id="name" name="heure" required />
+
+            <label for="email" class="form-control1"></label>
+            <input type="email" class="form-control" id="email" placeholder="email@domaine.com" name="email" required />
 
             <label for="name" class="form-control1"></label>
-            <input type="text" class="form-control" id="name" placeholder="Nom" required />
+            <input type="text" class="form-control" id="name" placeholder="Nom" name="nom" required />
 
-            <label for="Prénom" class="form-control1"></label>
-            <input type="text" class="form-control" id="Prénom" placeholder="Prénom" required />
+            <label for="prenom" class="form-control1"></label>
+            <input type="text" class="form-control" id="Prénom" placeholder="Prénom" name="prenom" required />
 
-            <label for="Numéro" class="form-control1"></label>
-            <input type="text" class="form-control" id="Numéro" placeholder="06.00..." required />
+            <label for="numero" class="form-control1"></label>
+            <input type="text" class="form-control4" id="numero" placeholder="06.00..." name="numero"required />
 
-            <label or="numbers" class="form-control1"></label>
-            <select id='Nombre' class="form-control3" name="clients" required>
+            <label or="nombre" class="form-control1"></label>
+            <select id='Nombre' class="form-control3" name="nombre" required>
 
                 <option value="0"> Nombre de personnes </option>
                 <option value="1"> 1 </option>
