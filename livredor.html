@@ -9,7 +9,7 @@
     <title>La fabrique du petit mangé</title>
 </head>
 
-<body style="background-color: rgba(255, 255, 255, 0.966);">
+<body style="background-color: rgb(255, 255, 255);">
     <div class="bandeau">
     </div>
     <div>
@@ -28,21 +28,21 @@
         </nav>
     </div>
     <div>
-        <h1 class="titre">LA FABRIQUE DU PETIT MANGÉ</h1>
+        <h1 class="titre">LA FABRIQUE DU PETIT MANGÉ <br>Le livre d'or</h1>
     </div>
 
     <section class="formulaire">
-        <form action="">
+        <form action="insert2.php" method="POST">
             <h1 class="section-title">NOUS CONTACTER</h1>
 
             <label for="name" class="form-control1"></label>
-            <input type="text" class="form-control" id="name" placeholder="Nom" required />
+            <input type="text" class="form-control" id="name" placeholder="Nom" name="nom" required />
 
             <label for="Prénom" class="form-control1"></label>
-            <input type="text" class="form-control" id="Prénom" placeholder="Prénom" required />
+            <input type="text" class="form-control" id="Prénom" placeholder="Prénom" name="prenom" required />
 
             <label for="Commentaire" class="form-control1"></label>
-            <input type="text" class="form-control2" id="Commentaire"  placeholder="Votre commentaire..." required />
+            <input type="text" class="form-control2" id="Commentaire"  placeholder="Votre commentaire..." name="commentaire" required />
 
             <center>
                 <input type="submit" value="Envoyer" class="btn-more">

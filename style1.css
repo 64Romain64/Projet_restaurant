@@ -9,7 +9,15 @@
 
 @media (min-width: 480px) and (max-width: 780px)
 {
-
+.titre{    
+    position: absolute;
+    font-size: 200%;
+    color:#6b6b6b;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'MaSuperPolice';
+    text-shadow: 10px 0px 0 #000000;
+    text-align: center;
+}
 }
 
 @media (min-width: 781px) and (max-width: 979px)
@@ -42,11 +50,14 @@ body{
 {
     position: absolute;
     top: 30%;
+    left: 20%;
+    right: 20%;
     font-size: 800%;
     color:#6b6b6b;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-family: 'MaSuperPolice';
     text-shadow: 10px 0px 0 #000000;
+    text-align: center;
 }
 
 /* Menu déroulant */
@@ -141,9 +152,20 @@ a:active {
     border-bottom: 2px rgba(180, 176, 228, 0.76);
 }
 
-.J1, .J2, .J3, .J4, .J4, .J5{
+.J1, .J2, .J3, .J4, .J4, .J5, .J6, .J7{
     padding: 1%; /* définir les différents écarts de remplissage sur les quatre côtés d'un élément */
     background: rgba(255, 255, 255, 0.76);
+    font-weight: bold;
+    width: 10%;
+    height: 100%;
+    text-align: center;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.J1_L, .J2_L, .J3_L, .J4_L, .J5_L, .J6_L, .J7_L{
+    padding: 1%; /* définir les différents écarts de remplissage sur les quatre côtés d'un élément */
+    background:  rgba(180, 176, 228, 0.76);
     font-weight: bold;
     width: 10%;
     height: 100%;
@@ -151,6 +173,7 @@ a:active {
     margin: 3px;
     display: inline-block;
     cursor: pointer;
+}
 }
 
 .jours{
@@ -214,9 +237,9 @@ p{
 .form-control1 {
     display: block;
     margin-top: 1%;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: left;
+    margin-left: 46%;
+    margin-right: 20%;
+    text-align: center;
     width: 08%;
     color: #000000;
 }
