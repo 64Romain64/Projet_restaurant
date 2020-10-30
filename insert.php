@@ -1,13 +1,3 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>Page de traitement</title>
-        <meta charset="utf-8">
-    </head>
-    <body>
-        <h1>Demande bien envoyé</h1>
-        <p>Merci d'avoir reservé dans notre restaurant</p>
-</body>
 
 <?php
  $serveur = "localhost";
@@ -43,3 +33,22 @@ $nombre = $_POST['nombre'];
     $stmt->execute();
 
 ?>
+<<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="style1.css" />
+    <script src="main.js"></script>
+    <script type="text/javascript" src="java.js"></script>
+    <title>La fabrique du petit mangé</title>
+</head>
+
+<body>
+    <center>
+        <p class="titre">MERCI D'AVOIR RESERVE DANS NOTRE RESTAURANT</p>
+        <div>
+            <a href="index.html">Retour</a>
+        </div>
+    </center>
+</body>
