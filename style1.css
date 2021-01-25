@@ -580,3 +580,11 @@ Footer left et center et Principal*/
 .shadow {
     width: 250px;
  }
+
+ @media (max-width: 780px)
+{
+    .video{
+        width: 300px;
+        height: 200px;    
+    }
+}
